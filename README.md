@@ -1,5 +1,4 @@
 # persona_mini
----
 This is a code storage for the 2023-2 mini project of 송형우, 이윤재, 정영준, 최서용.
 
 ---
