@@ -70,7 +70,7 @@ def chat(circumstance,team):
         values = [value.replace(" ", "") for value in values_yesSpace]
 
         if values[0] == "1": # json 1
-            with open('0523_lineup.json', 'r') as f:
+            with open('./json/0523_lineup.json', 'r') as f:
                 a = json.load(f)
             prompt_for_json1 = f"""
             {values[1]}
@@ -95,7 +95,7 @@ def chat(circumstance,team):
             final_input_messages = [{"role": m["role"], "content": m["content"]} for m in st.session_state.messages] + [{"role": "user", "content": prompt_for_json1}]
 
         elif values[0] == "2": # json 2
-            with open('0523_result.json', 'r') as f:
+            with open('./json/0523_result.json', 'r') as f:
                 a = json.load(f)
             
             prompt_for_json2 = f"""
